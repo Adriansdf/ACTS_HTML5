@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulario</title>
+    </head>
+
+    <body background="./light-blue-pastel-paper-texture-background-photo.jpg">
+
+        <h1 align="center">Formulario sencillo y básico</h1>
+
+        <label for="nombre">Nombre</label>
+            <input id="nombre" name="nombre" type="nombre">
+
+        <br><br>
+
+        <label for="apellidos">Apellidos</label>
+            <input id="apellidos" name="apellidos" type="apellidos">
+
+        <br><br>
+
+        <label for="correo">Correo electrónico</label>
+            <input id="correo" name="correo" type="email">
+
+        <br><br>
+
+        <label for="web"></label>Dirección web</label>
+            <input id="web" name="webs" type="url">
+
+        <br><br>
+
+        <label for="tele">Teléfono</label>
+            <input id="tele" name="tele" type="tel" pattern="-[0-9]{9}">
+
+        <br><br>
+
+        <label for="rango">Valores</label>
+            <input type="range" min="0" max="20" step="2" name="rango" id="rango">
+            <input type="number" id="numero" name="numero">
+            <script>
+                const rango = document.getElementById("rango")
+                const numero = document.getElementById("numero")
+                rango.onchange = function(){
+                numero.value = rango.value;
+                }
+            </script>
+
+
+    </body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
